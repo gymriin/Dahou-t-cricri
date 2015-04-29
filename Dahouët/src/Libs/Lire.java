@@ -1,4 +1,4 @@
-package com.cricri.Dahouët.metiers;
+package Libs;
 /*********************************************************************
   Nom du programme  :  Lire.java
   Auteur            :  Lécu Regis 

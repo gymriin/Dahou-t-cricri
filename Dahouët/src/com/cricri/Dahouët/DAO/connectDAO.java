@@ -9,7 +9,7 @@ public class connectDAO {
 
 	 public static Connection  cConnect () 
 	 {
-	      String url = "jdbc:mysql://localhost/gereville";
+	      String url = "jdbc:mysql://localhost/dahouëtfinal2";
 
 	      try
 	      {
@@ -17,7 +17,7 @@ public class connectDAO {
 
 	        //  On se connecte via la passerelle jdbc Oracle
 
-	        return con = DriverManager.getConnection(url,"gereville_user","acbg4beee");
+	        return con = DriverManager.getConnection(url,"root","");
 	      }
 	        catch(SQLException sqlE)
 	        {

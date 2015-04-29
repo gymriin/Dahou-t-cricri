@@ -45,8 +45,7 @@ public class Personne {
 	// Création de la fonction de contrôle de validité des Emails
 
 	public String toString() {
-		return "Personne [nom=" + nom + ", mail=" + mail + ", prenom=" + prenom
-				+ "]";
+		return "\n\nPersonne :\nnom=" + nom + "\nmail=" + mail + "\nprenom=" + prenom;
 	}
 
 }

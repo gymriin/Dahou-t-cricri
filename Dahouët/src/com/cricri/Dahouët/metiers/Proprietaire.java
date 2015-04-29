@@ -34,7 +34,10 @@ public class Proprietaire extends Personne {
 
 	// mise en place String to String pour retour affichage
 	public String toString() {
-		return "Proprietaire [telephone=" + telephone + ", adresse=" + adresse + "]";
+		return "\n\nProprietaire :\ntelephone=" + telephone + "\nadresse=" + adresse
+				+ "\nnom=" + nom + "\nmail=" + mail + "\nprenom=" + prenom;
 	}
 
+	
+	
 }

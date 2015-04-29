@@ -1,11 +1,9 @@
 package com.cricri.Dahouët.metiers;
 
-import java.text.DateFormat;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 
-import org.joda.time.DateTime;
-import org.joda.time.Period;
+import com.cricri.Dahouët.utils.Calculs;
 
 public class Licencie extends Personne {
 
@@ -60,11 +58,21 @@ public class Licencie extends Personne {
 		this.anneeLicence = anneeLicence;
 	}
 
-	// mise en place String to String pour retour affichage
+	@Override
 	public String toString() {
-		return "Licencie [numeroLicence=" + numeroLicence + ", pointsFFV="
-				+ pointsFFV + ", dateNaissance=" + dateNaissance
-				+ ", anneeLicence=" + anneeLicence + "]";
+		
+		SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy/MM/dd");
+		
+		return "Licencie :\n"+"numeroLicence=" + numeroLicence + "\npointsFFV="
+				+ pointsFFV + "\ndateNaissance(aaaa/MM/dd)=" + dateFormat.format(dateNaissance)
+				+ "\nanneeLicence=" + anneeLicence + "\nnom=" + nom + "\nmail="
+				+ mail + "\nprenom=" + prenom + "\nage="+Calculs.calculAge(dateNaissance) ;
 	}
+
+	
+	
+
+	// mise en place String to String pour retour affichage
+	
 
 }

@@ -23,11 +23,8 @@ public class Commissaire extends Personne {
 
 	// mise en place String to String pour retour affichage
 	public String toString() {
-		return "\n\nCommissaire:\ncomite=" + comite +"\nnom=" + nom + "\nmail="
-				+ mail + "\nprenom=" + prenom ;
+		return "\n\nCommissaire:\ncomite=" + comite + "\nnom=" + nom
+				+ "\nmail=" + mail + "\nprenom=" + prenom;
 	}
-
-	
-	
 
 }

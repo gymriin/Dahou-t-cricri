@@ -6,8 +6,6 @@ public class Proprietaire extends Personne {
 	private String telephone;
 	private String adresse;
 
-	
-
 	public Proprietaire(String nom, String mail, String prenom,
 			String telephone, String adresse) {
 		super(nom, mail, prenom);
@@ -34,10 +32,10 @@ public class Proprietaire extends Personne {
 
 	// mise en place String to String pour retour affichage
 	public String toString() {
-		return "\n\nProprietaire :\ntelephone=" + telephone + "\nadresse=" + adresse
-				+ "\nnom=" + nom + "\nmail=" + mail + "\nprenom=" + prenom;
+		return "\n\nProprietaire :\ntelephone=" + telephone + "\nadresse="
+				+ adresse + "\nnom=" + nom + "\nmail=" + mail + "\nprenom="
+				+ prenom;
 	}
 
-	
-	
 }
+ 

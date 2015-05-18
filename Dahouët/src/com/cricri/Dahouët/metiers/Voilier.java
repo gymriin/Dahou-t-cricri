@@ -1,80 +1,41 @@
 package com.cricri.Dahouët.metiers;
 
-import java.io.Serializable;
-import java.util.ArrayList;
-import java.util.List;
+public class Voilier {
 
-public class Voilier implements Serializable{
-	
-	private static final long serialVersionUID = 1L;
-	private int noVoile;
-	private String nomVoilier;
-	private String nomClasse;
-	private String nomSerie;
-	private int coeff;
-	private int noProp;
-	private String adress;
-	private String nomProp;
-	
-	private List<Voilier> voiliers = new ArrayList<Voilier>();
-	public Voilier(String nomVoilier) {
+	int NumVoile;
+	int NumProprietaire;
+	String NomClasse;
+	String NomVoilier;
+
+	public Voilier(int numProprietaire, String nomClasse, String nomVoilier) {
 		super();
-		this.nomVoilier = nomVoilier;
+		NumProprietaire = numProprietaire;
+		NomClasse = nomClasse;
+		NomVoilier = nomVoilier;
 	}
-	public void addVoilier(Voilier v){
-		voiliers.add(v);
+
+	public int getNumProprietaire() {
+		return NumProprietaire;
 	}
-	public int getNoVoile() {
-		return noVoile;
+
+	public void setNumProprietaire(int numProprietaire) {
+		NumProprietaire = numProprietaire;
 	}
-	public void setNoVoile(int noVoile) {
-		this.noVoile = noVoile;
-	}
-	public String getNomVoilier() {
-		return nomVoilier;
-	}
-	public void setNomVoilier(String nomVoilier) {
-		this.nomVoilier = nomVoilier;
-	}
+
 	public String getNomClasse() {
-		return nomClasse;
+		return NomClasse;
 	}
+
 	public void setNomClasse(String nomClasse) {
-		this.nomClasse = nomClasse;
+		NomClasse = nomClasse;
 	}
-	public String getNomSerie() {
-		return nomSerie;
+
+	public String getNomVoilier() {
+		return NomVoilier;
 	}
-	public void setNomSerie(String nomSerie) {
-		this.nomSerie = nomSerie;
+
+	public void setNomVoilier(String nomVoilier) {
+		NomVoilier = nomVoilier;
 	}
-	public int getCoeff() {
-		return coeff;
-	}
-	public void setCoeff(int coeff) {
-		this.coeff = coeff;
-	}
-	public int getNoProp() {
-		return noProp;
-	}
-	public void setNoProp(int noProp) {
-		this.noProp = noProp;
-	}
-	public String getAdress() {
-		return adress;
-	}
-	public void setAdress(String adress) {
-		this.adress = adress;
-	}
-	public String getNomProp() {
-		return nomProp;
-	}
-	public void setNomProp(String nomProp) {
-		this.nomProp = nomProp;
-	}
-	public List<Voilier> getVoiliers() {
-		return voiliers;
-	}
-	
-	
+
 }

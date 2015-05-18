@@ -60,19 +60,17 @@ public class Licencie extends Personne {
 
 	@Override
 	public String toString() {
-		
+
 		SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy/MM/dd");
-		
-		return "Licencie :\n"+"numeroLicence=" + numeroLicence + "\npointsFFV="
-				+ pointsFFV + "\ndateNaissance(aaaa/MM/dd)=" + dateFormat.format(dateNaissance)
-				+ "\nanneeLicence=" + anneeLicence + "\nnom=" + nom + "\nmail="
-				+ mail + "\nprenom=" + prenom + "\nage="+Calculs.calculAge(dateNaissance) ;
+
+		return "Licencie :\n" + "numeroLicence=" + numeroLicence
+				+ "\npointsFFV=" + pointsFFV + "\ndateNaissance(aaaa/MM/dd)="
+				+ dateFormat.format(dateNaissance) + "\nanneeLicence="
+				+ anneeLicence + "\nnom=" + nom + "\nmail=" + mail
+				+ "\nprenom=" + prenom + "\nage="
+				+ Calculs.calculAge(dateNaissance);
 	}
 
-	
-	
-
 	// mise en place String to String pour retour affichage
-	
 
 }

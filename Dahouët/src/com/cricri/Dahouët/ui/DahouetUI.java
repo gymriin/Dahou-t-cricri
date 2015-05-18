@@ -1,30 +1,21 @@
 package com.cricri.Dahouët.ui;
 
 import java.awt.AWTEvent;
-import java.awt.BorderLayout;
+import java.awt.Component;
 import java.awt.Image;
 import java.awt.Toolkit;
-
-import javax.swing.JFrame;
-import javax.swing.JPanel;
-import javax.swing.border.EmptyBorder;
-
-import net.miginfocom.swing.MigLayout;
-
-import javax.swing.JMenuBar;
-import javax.swing.JMenuItem;
-
-import java.awt.Dimension;
-
-import javax.swing.JPopupMenu;
-
-import java.awt.Component;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
 
+import javax.swing.JFrame;
 import javax.swing.JMenu;
+import javax.swing.JMenuBar;
+import javax.swing.JMenuItem;
+import javax.swing.JPopupMenu;
+
+import net.miginfocom.swing.MigLayout;
 
 public class DahouetUI extends JFrame {
 	static Image fondEcran;
@@ -38,29 +29,29 @@ public class DahouetUI extends JFrame {
 
 		JMenu mnNewMenu = new JMenu("G\u00E9n\u00E9ral");
 		menuBar.add(mnNewMenu);
-		
+
 		// enregistrement
-		JMenuItem mntmEnregistrementVoilier = new JMenuItem("Enregistrement Voilier");
+		JMenuItem mntmEnregistrementVoilier = new JMenuItem(
+				"Enregistrement Voilier");
 		mnNewMenu.add(mntmEnregistrementVoilier);
 		mntmEnregistrementVoilier.addActionListener(new ActionListener() {
-			
+
 			@Override
 			public void actionPerformed(ActionEvent e) {
-			recordShipUI enregistrement=new recordShipUI ();
-			enregistrement.setVisible(true);
+				recordShipUI enregistrement = new recordShipUI();
+				enregistrement.setVisible(true);
 			}
 		});
-		
+
 		// quitter
 		JMenuItem Quitter = new JMenuItem("Quitter");
 		mnNewMenu.add(Quitter);
 		mnNewMenu.add(Quitter);
 		Quitter.addActionListener(new ActionListener() {
-			
-			
+
 			public void actionPerformed(ActionEvent e) {
 				System.exit(0);
-				
+
 			}
 		});
 		JMenu mnNewMenu_1 = new JMenu("?");
@@ -95,7 +86,9 @@ public class DahouetUI extends JFrame {
 
 	}
 
-	private static void addPopup(Component component, final JPopupMenu popup) {
+	@SuppressWarnings("unused")
+	private static void addPopup(final Component component,
+			final JPopupMenu popup) {
 		component.addMouseListener(new MouseAdapter() {
 			public void mousePressed(MouseEvent e) {
 				if (e.isPopupTrigger()) {

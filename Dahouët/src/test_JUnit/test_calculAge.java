@@ -1,13 +1,10 @@
 package test_JUnit;
 
-import static org.junit.Assert.*;
-
-import java.util.Date;
+import static org.junit.Assert.assertEquals;
 
 import org.joda.time.DateTime;
 import org.junit.Test;
 
-import com.cricri.Dahouët.metiers.Licencie;
 import com.cricri.Dahouët.utils.Calculs;
 
 public class test_calculAge {

@@ -1,7 +1,5 @@
 package com.cricri.Dahouët.metiers;
 
-import org.joda.time.DateTime;
-
 public class Personne {
 
 	// Déclaration des variables
@@ -45,7 +43,8 @@ public class Personne {
 	// Création de la fonction de contrôle de validité des Emails
 
 	public String toString() {
-		return "\n\nPersonne :\nnom=" + nom + "\nmail=" + mail + "\nprenom=" + prenom;
+		return "\n\nPersonne :\nnom=" + nom + "\nmail=" + mail + "\nprenom="
+				+ prenom;
 	}
 
 }
